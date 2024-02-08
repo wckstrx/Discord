@@ -23,19 +23,19 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1203254646651752509')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
+    .setURL('https://www.twitch.tv/wckstrx') //Must be a youtube video link 
     .setState('Recording')
     .setName('')
-    .setDetails(`Valorant [${formatTime()}]`)
+    .setDetails(`xx [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/1160972654455570574/1204810321554837504/image.png?ex=65d6160c&is=65c3a10c&hm=6ba127819bc0e9435b503fbe7043152e02b670f3b1e9befca552a9352170f361&=&format=webp&quality=lossless') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('vibing') //Text when you hover the Large image
+    .setAssetsSmallImage('https://i.pinimg.com/originals/c3/d2/2f/c3d22f62f84cef0172158c4cad2345cb.gif') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('Kitty') //Text when you hover the Small image
+    .addButton('Watch', 'https://youtu.be/fZzz9UIZvRA')
+    .addButton('Join', 'https://discord.com/invite/hurry');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
@@ -52,5 +52,5 @@ client.on('ready', async () => {
   }, 1000); // Update every second
 });
 
-const mySecret = process.env['TOKEN'];
+const mySecret = process.env[''];
 client.login(mySecret);
