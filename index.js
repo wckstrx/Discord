@@ -35,7 +35,7 @@ client.on('ready', async () => {
     .setAssetsSmallImage('https://i.pinimg.com/originals/c3/d2/2f/c3d22f62f84cef0172158c4cad2345cb.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Kitty') //Text when you hover the Small image
     .addButton('Watch', 'https://youtu.be/fZzz9UIZvRA')
-    .addButton('Join', 'https://discord.com/invite/hurry');
+    .addButton('Join', 'https://discord.com/hurry');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
