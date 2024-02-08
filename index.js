@@ -25,16 +25,15 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1203254646651752509')
     .setType('STREAMING')
-    .setURL('https://www.twitch.tv/wckstrx') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
+    .setURL('https://twitch.tv/wckstrx') //Must be a youtube video link 
+    .setName('kys')
     .setDetails(`xx [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://media.discordapp.net/attachments/1160972654455570574/1204810321554837504/image.png?ex=65d6160c&is=65c3a10c&hm=6ba127819bc0e9435b503fbe7043152e02b670f3b1e9befca552a9352170f361&=&format=webp&quality=lossless') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('vibing') //Text when you hover the Large image
+ .setAssetsLargeImage('https://i.pinimg.com/564x/db/19/62/db1962fcfcaa310d2e3b078ee1c6041a.jpg') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('xo') //Text when you hover the Large image
     .setAssetsSmallImage('https://i.pinimg.com/originals/c3/d2/2f/c3d22f62f84cef0172158c4cad2345cb.gif') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Kitty') //Text when you hover the Small image
-    .addButton('Watch', 'https://youtu.be/fZzz9UIZvRA')
+    .setAssetsSmallText('smd') //Text when you hover the Small image
+    .addButton('♡', 'https://youtu.be/fZzz9UIZvRA')
     .addButton('Join', 'https://discord.com/hurry');
 
   client.user.setActivity(r);
